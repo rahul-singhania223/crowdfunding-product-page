@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Commissioner', sans-serif;
+    font-size: 16px;
+
+}
+
+
+#header {
+    background-image: url('./assets/image-hero-desktop.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 55vh;
+    padding: 20px;
+    
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    font-family: 'Commissioner', sans-serif;
+    color: white;
+    font-weight: 500;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.logo {
+    flex: 1;
+}
+
+.header__nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    text-transform: capitalize;
+    margin-left: auto;
+}
+
+#open, #close {
+    display: none;
+}
+
+.header__nav li {
+    cursor: pointer;
+}
+
+#mobile_menu {
+    width: 100%;
+    height: 100%;
+    position: absolute;    
+    display: none;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);   
+}
+
+#modal {
+    width: 90%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 14px;
+    position: relative;
+    top: 150px;
+    margin: 0 auto;
+}
+
+#mobile__nav {
+    height: fit-content;
+}
+
+#mobile_menu li {
+    list-style: none;
+    text-transform: capitalize;
+    padding: 30px;
+    border-bottom: solid 1px lightgray;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: hsl(0, 0%, 0%);
+}
+
+#modal__completed, #modal_back_project {
+    width: 100%;
+    height: 100%;
+    position: fixed;    
+    left: 0;
+    top: 0;
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+#modal__completed div, #modal_back_project div {
+    width: 30%;   
+    background-color: white;
+    border-radius: 7px;
+    padding: 40px;
+    text-align: center;
+}
+
+#modal__completed img {
+    margin: 20px 0;
+}
+
+#modal__completed h2 {
+    font-size: 1.3rem;
+    padding-top: 15px;
+}
+
+#modal__completed p {
+    font-size: 0.95rem;
+    line-height: 25px;
+    padding: 20px 0;
+    color: hsl(0, 0%, 48%);
+}
+
+#modal__completed button {
+    margin: 10px 0;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    background: hsl(176, 50%, 47%);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#modal__completed button:hover {
+    background: hsl(176, 72%, 28%);
+}
+
+#modal_back_project {    
+    display: none;    
+}
+
+#modal_back_project div {
+    padding: 0;
+    width: 100%;
+    text-align: unset;
+}
+
+#modal_back_project .modal__box {
+    width: 50%;
+    padding: 0;
+    text-align: unset !important;
+    
+}
+
+
+.modal__box .close__icon {
+    padding-top: 20px !important;
+    padding-right: 20px !important;
+    width: 100% !important;
+    text-align: right !important;
+    
+}
+
+.close__icon i {
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+#modal_back_project .header {
+    padding: 0 30px;
+}
+
+#modal_back_project .header h2 {
+    font-size: 1.1rem;
+}
+
+#modal_back_project .header p {
+    font-size: 0.9rem;
+    padding: 15px 0;
+    color: hsl(0, 0%, 48%);
+}
+
+.left {
+    width: 100px !important;
+}
+
+.left div{
+    width: 25px !important;
+    height: 25px;
+    background: black;
+}
+
+
+.last {
+    border-bottom: none !important;
+}
+
+.first {
+    padding-top: 0 !important;
+}
+
+
+#main {
+    height: 600px;
+    width: 50%;
+    background: white;    
+    margin: 0 auto;
+    margin-top: -100px;
+    border-radius: 10px;
+    padding: 0 40px;
+}
+
+
+
+.main__header {
+    text-align: center;
+}
+
+.main__header img {
+    margin-top: -30px;
+}
+
+.main__header h1 {
+   padding: 25px 0 15px 0;
+   font-size: 1.7rem;
+   color: hsl(0, 0%, 0%);
+}
+
+.main__header h4 {
+    color: hsl(0, 0%, 48%);
+    font-weight: 400;
+}
+
+.main__buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    margin: 50px 0;
+}
+
+.button_1 {
+    flex: 1;
+}
+
+.button_1 button {
+    height: 55px;
+    width: 200px;
+    border-radius: 30px;
+    background: hsl(176, 50%, 47%);
+    border: none;
+    color: white;
+    font-weight: 500;
+    max-width: 250px;
+}
+
+.button_1 button:hover {
+    background-color: hsl(176, 72%, 28%);
+    cursor: pointer;
+}
+
+.button_2 {
+    width: 180px;
+    height: 55px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 700;
+    color: hsl(0, 0%, 48%);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bookmark {
+    margin-right: 14px;
+}
+
+.bookmarked {
+    color: hsl(176, 72%, 28%);
+}
+
+.main__statistics {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.statistics__container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;    
+
+}
+
+.statistics {
+    padding: 0 50px;
+    margin: 0 10px;
+    text-align: left;
+    
+}
+
+.statistics__border {
+    border-left: solid 1px lightgray;
+    border-right: solid 1px lightgray;
+}
+
+.statistics h1 {
+    font-size: 2.1rem;
+    padding-bottom: 10px;
+    color: hsl(0, 0%, 0%);
+}
+
+.statistics h5 {
+    font-weight: 500;
+    color: hsl(0, 0%, 48%);
+}
+
+.statistics__bar progress {
+    width: 100%;   
+    
+    
+}
+
+.main__about {
+   padding-top: 100px;
+}
+
+.main__about h3 {
+    font-size: 1.2rem;
+    padding-bottom: 40px;
+}
+
+.main__about p {
+    line-height: 30px;
+    font-weight: 500;
+    color: hsl(0, 0%, 48%);
+}
+
+.main__plans {
+    padding: 40px 0;
+}
+
+.plan {
+    border: solid 1px lightgray;
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+.plan__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plan__header h3 {
+    text-transform: capitalize;
+    font-size: 1.15rem;
+}
+
+.plan__header h4 {
+    color: hsl(176, 50%, 47%);
+}
+
+.plan__body p {
+    padding: 40px 0;
+    line-height: 28px;
+    font-weight: 500;
+    color: hsl(0, 0%, 48%);
+}
+
+.plan__action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.plan__action h2 {
+    font-size: 2rem;
+}
+
+.plan__action span {
+    font-weight: 500;
+    color: hsl(0, 0%, 48%);
+}
+
+.action__button {
+    background: hsl(176, 50%, 47%);
+    color: white;
+    font-weight: 500;
+    border-radius: 30px;
+    width: 170px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.action__button:hover {
+    background-color: hsl(176, 72%, 28%);
+}
+
+
+
+@media(max-width: 1100px) {
+    #main{
+        width: 70%;
+    }
+
+    #modal__completed div {
+        width: 60%;
+    }
+
+    .button_2 {
+        width: fit-content;
+        
+    }
+
+    .bookmark {
+        margin: 0;
+    }
+
+    .button_2 span {
+        display: none;
+    }
+
+    .statistics__container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .statistics {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .statistics__border {
+        border: none;
+    }
+
+    .plan__header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .plan__header h4 {
+        padding-top: 14px;
+    }
+
+}
+
+
+@media(max-width: 768px) {
+    .header__nav ul {
+        display: none;
+    }
+
+    #open, #close {
+        display: block;
+        cursor: pointer;
+        
+    }
+
+    #close {
+        position: relative;
+        bottom: 90px;
+        left: 95%;
+    }
+
+    #modal__completed div {
+        width: 90%;
+    }
+    
+    #main {
+        width: 90%;
+    }
+
+    .main__header h1 {
+        padding: 40px 0;
+        line-height: 44px;
+    }
+
+    .main__header h4 {
+        line-height: 28px;
+    }
+
+    .button_1 button {
+        width: 80%;
+    }
+
+    .statistics h5 {
+        padding-top: 10px;
+    }
+
+    .plan__action {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .action__button {
+        margin-top: 30px;
+    }
+}
