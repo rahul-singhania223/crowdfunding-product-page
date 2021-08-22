@@ -6,9 +6,7 @@ let screen_width = window.innerWidth;
 let action_btns = document.getElementsByClassName('action__button');
 let modal_completed = document.getElementById("modal__completed");
 let modal_completed_close_btn = document.getElementById("modal_completed_close");
-let modal_back_project_close_btn = document.getElementById("close_modal_back_project");
-let modal_back_project = document.getElementById("modal_back_project");
-let modal_back_project_open_btn = document.getElementById("back_project");
+
 
 let open_modal = false;
 let bookmarked = false;
@@ -60,12 +58,3 @@ modal_completed_close_btn.addEventListener("click", () => {
     modal_completed.style.display = "none";    
 })
 
-
-// ----------------Handle modal_back_project----------//
-modal_back_project_close_btn.addEventListener("click", () => {
-    modal_back_project.style.display  = "none";
-})
-
-modal_back_project_open_btn.addEventListener("click", () => {
-    modal_back_project.style.display = "grid";
-})
