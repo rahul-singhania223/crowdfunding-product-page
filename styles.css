@@ -219,8 +219,32 @@
     margin-right: 14px;
 }
 
+.bookmark .icon {
+    width: 55px;
+    height: 55px;
+    display: grid;
+    place-items: center;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.bookmark .icon i {
+    font-size: 1.1rem;
+    color: hsl(0, 0%, 48%);
+
+}
+
 .bookmarked {
     color: hsl(176, 72%, 28%);
+}
+
+.bookmarked .icon {
+    background-color: hsl(176, 72%, 28%);
+    
+}
+
+.bookmarked__icon i {
+    color: white !important;
 }
 
 .main__statistics {
@@ -260,8 +284,19 @@
 
 .statistics__bar progress {
     width: 100%;   
-    
-    
+}
+
+progress {
+    border-radius: 7px;
+    height: 10px;
+}
+  progress::-webkit-progress-bar {
+    border-radius: 7px;
+    background-color: lightgray;
+  }
+  progress::-webkit-progress-value {
+    background-color: hsl(176, 50%, 47%);
+    border-radius: 7px;
 }
 
 .main__about {
@@ -419,6 +454,7 @@
 
     #modal__completed div {
         width: 90%;
+        padding: 20px;
     }
     
     #main {

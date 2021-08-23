@@ -36,10 +36,14 @@ bookmark_btn.addEventListener('click', (e) => {
 
     bookmarked = !bookmarked;
 
+
     if(bookmarked) {
         bookmark_btn.classList.add('bookmarked');
+        bookmark_btn.lastElementChild.innerHTML = "Bookmarked";
+        
     } else {
-        bookmark_btn.classList.remove('bookmarked')
+        bookmark_btn.classList.remove('bookmarked');
+        bookmark_btn.lastElementChild.innerHTML = "Bookmark";
     }
     
 })
