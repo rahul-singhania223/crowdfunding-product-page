@@ -380,6 +380,14 @@ progress {
     background-color: hsl(176, 72%, 28%);
 }
 
+.plan__closed {
+    opacity: 0.5 !important;
+}
+
+.action__btn__closed {
+    background-color: hsl(0, 0%, 48%);
+}
+
 
 
 @media(max-width: 1100px) {

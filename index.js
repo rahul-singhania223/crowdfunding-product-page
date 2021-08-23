@@ -6,7 +6,7 @@ let screen_width = window.innerWidth;
 let action_btns = document.getElementsByClassName('action__button');
 let modal_completed = document.getElementById("modal__completed");
 let modal_completed_close_btn = document.getElementById("modal_completed_close");
-
+let closed_action_btn = document.getElementsByClassName('action__btn__closed')[0];
 
 let open_modal = false;
 let bookmarked = false;
@@ -62,3 +62,6 @@ modal_completed_close_btn.addEventListener("click", () => {
     modal_completed.style.display = "none";    
 })
 
+
+// -----------Changes when out of stock----------//
+closed_action_btn.innerHTML = "Out of stock";
